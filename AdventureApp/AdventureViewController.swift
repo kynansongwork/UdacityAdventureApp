@@ -8,13 +8,15 @@
 
 import UIKit
 
-class AdventureViewController: UIViewController {
+class AdventureViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start Over", style: .plain, target: self, action: #selector(startOver))
         //Used to control title and buttons
         //Need to set the identity class on a scene and set inherit module.
+        
+        
     }
     
     @objc func startOver() {

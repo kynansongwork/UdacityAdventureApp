@@ -43,7 +43,7 @@
                                     <segue destination="zaB-Wq-Gzi" kind="push" id="Zl1-nq-Cnv"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-c4-oTq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-c4-oTq">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You wake up in a wooden room. 
@@ -98,7 +98,7 @@ There is a door in front of you and a hole in the wall next to you. 
                                     <segue destination="glW-gd-2Co" kind="push" id="9c2-Jc-j0I"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVE-yp-7kW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVE-yp-7kW">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You go through the door and briefly blinded by a bright light.
@@ -151,7 +151,7 @@ When your sight returns you find yourself standing in an overgrown garden.</stri
                                     <segue destination="f5A-P3-GE2" kind="push" id="Axp-ob-9CK"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-P2-n1j">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-P2-n1j">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You begin to crawl through the hole.
@@ -196,7 +196,7 @@ You see a dim light at the end of the tunnel.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Everything goes dark, as you choose to nap." translatesAutoresizingMaskIntoConstraints="NO" id="GX5-eJ-TjS">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Everything goes dark, as you choose to nap." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-eJ-TjS">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
@@ -233,7 +233,7 @@ You see a dim light at the end of the tunnel.</string>
                                     <segue destination="glW-gd-2Co" kind="push" id="M15-ve-tTE"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-5c-lCt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-5c-lCt">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You explore the garden, but find nothing but streches of grass. 
@@ -279,7 +279,7 @@ After a few minutes of wandering, you find a door. Just a door, standing in the 
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf3-93-g64">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf3-93-g64">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You lie down on the grass.
@@ -316,7 +316,7 @@ Then nothing.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jv5-ig-0oQ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jv5-ig-0oQ">
                                 <rect key="frame" x="68" y="159" width="239" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">You open the door, expecting nothing to happen.
@@ -347,6 +347,6 @@ You step through the portal.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M15-ve-tTE"/>
+        <segue reference="9c2-Jc-j0I"/>
     </inferredMetricsTieBreakers>
 </document>
