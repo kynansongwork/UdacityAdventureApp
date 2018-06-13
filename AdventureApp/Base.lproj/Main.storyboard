@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2xi-v6-1dc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VIi-5U-zD1">
+            <objects>
+                <navigationController id="2xi-v6-1dc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FKZ-kk-2iJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ia-CL-CHC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="He0-3W-jR2" kind="relationship" relationship="rootViewController" id="gBK-IZ-OjY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qEz-te-YJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="87"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R3E-3e-0Nm">
+            <objects>
+                <viewController id="He0-3W-jR2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ep5-dU-AHy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYB-mO-IwC">
+                                <rect key="frame" x="82" y="597" width="210" height="30"/>
+                                <state key="normal" title="Go through the hole in the wall"/>
+                                <connections>
+                                    <segue destination="zaB-Wq-Gzi" kind="push" id="Zl1-nq-Cnv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIt-c4-oTq">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You wake up in a wooden room. 
+
+
+There is a door in front of you and a hole in the wall next to you. 
+ There is a knife in your hand.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puL-ng-Pc2">
+                                <rect key="frame" x="120" y="559" width="135" height="30"/>
+                                <state key="normal" title="Go though the door"/>
+                                <connections>
+                                    <segue destination="yvd-kY-eAL" kind="push" id="2oI-Be-4fX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wcu-m2-Haf" firstAttribute="trailing" secondItem="VIt-c4-oTq" secondAttribute="trailing" constant="68" id="16O-r5-ddX"/>
+                            <constraint firstItem="VIt-c4-oTq" firstAttribute="leading" secondItem="Wcu-m2-Haf" secondAttribute="leading" constant="68" id="8YU-rU-jDI"/>
+                            <constraint firstItem="puL-ng-Pc2" firstAttribute="leading" secondItem="Wcu-m2-Haf" secondAttribute="leading" constant="120" id="DDp-PG-vuh"/>
+                            <constraint firstItem="Wcu-m2-Haf" firstAttribute="trailing" secondItem="puL-ng-Pc2" secondAttribute="trailing" constant="120" id="DwC-hY-Mqt"/>
+                            <constraint firstItem="Wcu-m2-Haf" firstAttribute="trailing" secondItem="tYB-mO-IwC" secondAttribute="trailing" constant="83" id="RSh-DU-AcP"/>
+                            <constraint firstItem="VIt-c4-oTq" firstAttribute="top" secondItem="Wcu-m2-Haf" secondAttribute="top" constant="95" id="eYQ-IZ-v1h"/>
+                            <constraint firstItem="tYB-mO-IwC" firstAttribute="leading" secondItem="Wcu-m2-Haf" secondAttribute="leading" constant="82" id="ijG-li-7Ek"/>
+                            <constraint firstItem="Wcu-m2-Haf" firstAttribute="centerY" secondItem="VIt-c4-oTq" secondAttribute="bottom" constant="-83.5" id="ike-p9-XBU"/>
+                            <constraint firstItem="Wcu-m2-Haf" firstAttribute="bottom" secondItem="tYB-mO-IwC" secondAttribute="bottom" constant="40" id="m7A-eX-haV"/>
+                            <constraint firstItem="tYB-mO-IwC" firstAttribute="top" secondItem="puL-ng-Pc2" secondAttribute="bottom" constant="8" id="mHL-rF-gOn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wcu-m2-Haf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Slf-m4-eQl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bh-tk-PZE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="955"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X50-lZ-NST">
+            <objects>
+                <viewController id="yvd-kY-eAL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w7O-6B-gvt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-lb-t2W">
+                                <rect key="frame" x="82" y="597" width="210" height="30"/>
+                                <state key="normal" title="Lie down"/>
+                                <connections>
+                                    <segue destination="glW-gd-2Co" kind="push" id="9c2-Jc-j0I"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVE-yp-7kW">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You go through the door and briefly blinded by a bright light.
+
+When your sight returns you find yourself standing in an overgrown garden.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzz-3i-XK6">
+                                <rect key="frame" x="120" y="559" width="135" height="30"/>
+                                <state key="normal" title="Explore the garden"/>
+                                <connections>
+                                    <segue destination="BIQ-iw-ShG" kind="push" id="saf-Fl-16R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nfG-Rg-ONa" firstAttribute="trailing" secondItem="fDh-lb-t2W" secondAttribute="trailing" constant="83" id="3rA-NS-2Ov"/>
+                            <constraint firstItem="sVE-yp-7kW" firstAttribute="top" secondItem="nfG-Rg-ONa" secondAttribute="top" constant="95" id="5pW-v7-iBx"/>
+                            <constraint firstItem="fDh-lb-t2W" firstAttribute="top" secondItem="vzz-3i-XK6" secondAttribute="bottom" constant="8" id="9EL-PY-F9k"/>
+                            <constraint firstItem="nfG-Rg-ONa" firstAttribute="centerY" secondItem="sVE-yp-7kW" secondAttribute="bottom" constant="-83.5" id="F2d-lj-ebx"/>
+                            <constraint firstItem="nfG-Rg-ONa" firstAttribute="trailing" secondItem="sVE-yp-7kW" secondAttribute="trailing" constant="68" id="JVg-kl-b4N"/>
+                            <constraint firstItem="sVE-yp-7kW" firstAttribute="leading" secondItem="nfG-Rg-ONa" secondAttribute="leading" constant="68" id="acm-dX-xoD"/>
+                            <constraint firstItem="nfG-Rg-ONa" firstAttribute="trailing" secondItem="vzz-3i-XK6" secondAttribute="trailing" constant="120" id="bjj-4K-Vty"/>
+                            <constraint firstItem="nfG-Rg-ONa" firstAttribute="bottom" secondItem="fDh-lb-t2W" secondAttribute="bottom" constant="40" id="u78-ha-bOt"/>
+                            <constraint firstItem="fDh-lb-t2W" firstAttribute="leading" secondItem="nfG-Rg-ONa" secondAttribute="leading" constant="82" id="vm7-JK-j7L"/>
+                            <constraint firstItem="vzz-3i-XK6" firstAttribute="leading" secondItem="nfG-Rg-ONa" secondAttribute="leading" constant="120" id="yZx-UN-Vzo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nfG-Rg-ONa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5z3-7p-7ro"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UZ-TV-vWI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="-170"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="78s-nz-O4R">
+            <objects>
+                <viewController id="zaB-Wq-Gzi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5f5-Bv-edd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-Rl-I0y">
+                                <rect key="frame" x="82" y="597" width="210" height="30"/>
+                                <state key="normal" title="Just nap"/>
+                                <connections>
+                                    <segue destination="f5A-P3-GE2" kind="push" id="Axp-ob-9CK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSc-P2-n1j">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You begin to crawl through the hole.
+
+You become drowsy. 
+
+You see a dim light at the end of the tunnel.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHm-qk-7fu">
+                                <rect key="frame" x="114" y="559" width="146" height="30"/>
+                                <state key="normal" title="Try to get to the light"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1fQ-Rl-I0y" firstAttribute="top" secondItem="pHm-qk-7fu" secondAttribute="bottom" constant="8" id="0jJ-3V-p7U"/>
+                            <constraint firstItem="9d2-IL-AdU" firstAttribute="bottom" secondItem="1fQ-Rl-I0y" secondAttribute="bottom" constant="40" id="4aA-cd-Oxy"/>
+                            <constraint firstItem="9d2-IL-AdU" firstAttribute="trailing" secondItem="pHm-qk-7fu" secondAttribute="trailing" constant="115" id="BHi-17-swK"/>
+                            <constraint firstItem="9d2-IL-AdU" firstAttribute="centerY" secondItem="gSc-P2-n1j" secondAttribute="bottom" constant="-83.5" id="Dnh-Qt-hKa"/>
+                            <constraint firstItem="9d2-IL-AdU" firstAttribute="trailing" secondItem="1fQ-Rl-I0y" secondAttribute="trailing" constant="83" id="Ebb-Qq-nOt"/>
+                            <constraint firstItem="gSc-P2-n1j" firstAttribute="top" secondItem="9d2-IL-AdU" secondAttribute="top" constant="95" id="F77-CQ-Ksu"/>
+                            <constraint firstItem="pHm-qk-7fu" firstAttribute="leading" secondItem="9d2-IL-AdU" secondAttribute="leading" constant="114" id="Sbe-9b-xPu"/>
+                            <constraint firstItem="1fQ-Rl-I0y" firstAttribute="leading" secondItem="9d2-IL-AdU" secondAttribute="leading" constant="82" id="hP5-0I-9JD"/>
+                            <constraint firstItem="9d2-IL-AdU" firstAttribute="trailing" secondItem="gSc-P2-n1j" secondAttribute="trailing" constant="68" id="iQK-CW-pgp"/>
+                            <constraint firstItem="gSc-P2-n1j" firstAttribute="leading" secondItem="9d2-IL-AdU" secondAttribute="leading" constant="68" id="u6d-eI-1YE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9d2-IL-AdU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sK1-k6-dMd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dc0-Cb-eaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="742.5787106446777"/>
+        </scene>
+        <!--Adventure View Controller-->
+        <scene sceneID="D5V-2f-D4w">
+            <objects>
+                <viewController id="f5A-P3-GE2" customClass="AdventureViewController" customModule="AdventureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u2N-Q5-qeK" customClass="A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Everything goes dark, as you choose to nap." translatesAutoresizingMaskIntoConstraints="NO" id="GX5-eJ-TjS">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GX5-eJ-TjS" firstAttribute="top" secondItem="9w4-dv-zZz" secondAttribute="top" constant="95" id="Ipm-mm-Wte"/>
+                            <constraint firstItem="9w4-dv-zZz" firstAttribute="trailing" secondItem="GX5-eJ-TjS" secondAttribute="trailing" constant="68" id="RPj-Ax-Kr2"/>
+                            <constraint firstItem="GX5-eJ-TjS" firstAttribute="leading" secondItem="9w4-dv-zZz" secondAttribute="leading" constant="68" id="cAy-ed-NZQ"/>
+                            <constraint firstItem="9w4-dv-zZz" firstAttribute="centerY" secondItem="GX5-eJ-TjS" secondAttribute="bottom" constant="-83.5" id="sw1-OB-PxO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9w4-dv-zZz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LDR-dx-Bmw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7S-9h-PWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2180" y="1374"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ny2-HO-RmE">
+            <objects>
+                <viewController id="BIQ-iw-ShG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hT2-qB-9Rd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSQ-nx-kE2">
+                                <rect key="frame" x="82" y="597" width="210" height="30"/>
+                                <state key="normal" title="Give up and lie down"/>
+                                <connections>
+                                    <segue destination="glW-gd-2Co" kind="push" id="M15-ve-tTE"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7C-5c-lCt">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You explore the garden, but find nothing but streches of grass. 
+
+After a few minutes of wandering, you find a door. Just a door, standing in the middle of a field.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0E-SF-v3M">
+                                <rect key="frame" x="120" y="559" width="135" height="30"/>
+                                <state key="normal" title="Open the door"/>
+                                <connections>
+                                    <segue destination="0dH-dY-V7X" kind="push" id="5pn-Wt-s1K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="khW-V9-d5v" firstAttribute="centerY" secondItem="R7C-5c-lCt" secondAttribute="bottom" constant="-83.5" id="1Tr-UX-Cnp"/>
+                            <constraint firstItem="khW-V9-d5v" firstAttribute="trailing" secondItem="M0E-SF-v3M" secondAttribute="trailing" constant="120" id="42a-ej-gNM"/>
+                            <constraint firstItem="lSQ-nx-kE2" firstAttribute="leading" secondItem="khW-V9-d5v" secondAttribute="leading" constant="82" id="FzU-E9-oni"/>
+                            <constraint firstItem="R7C-5c-lCt" firstAttribute="leading" secondItem="khW-V9-d5v" secondAttribute="leading" constant="68" id="IS9-MT-RwL"/>
+                            <constraint firstItem="khW-V9-d5v" firstAttribute="bottom" secondItem="lSQ-nx-kE2" secondAttribute="bottom" constant="40" id="d0E-XC-NyA"/>
+                            <constraint firstItem="khW-V9-d5v" firstAttribute="trailing" secondItem="lSQ-nx-kE2" secondAttribute="trailing" constant="83" id="dXC-zg-Tpp"/>
+                            <constraint firstItem="R7C-5c-lCt" firstAttribute="top" secondItem="khW-V9-d5v" secondAttribute="top" constant="95" id="qZz-ak-cGY"/>
+                            <constraint firstItem="M0E-SF-v3M" firstAttribute="leading" secondItem="khW-V9-d5v" secondAttribute="leading" constant="120" id="rl6-bk-UNH"/>
+                            <constraint firstItem="lSQ-nx-kE2" firstAttribute="top" secondItem="M0E-SF-v3M" secondAttribute="bottom" constant="8" id="rwz-Qk-bdH"/>
+                            <constraint firstItem="khW-V9-d5v" firstAttribute="trailing" secondItem="R7C-5c-lCt" secondAttribute="trailing" constant="68" id="sCn-2h-UiF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="khW-V9-d5v"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9iG-tb-kZp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="In8-wu-62C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="-617"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ysM-Qx-DK2">
+            <objects>
+                <viewController id="glW-gd-2Co" userLabel="View Controller" customClass="AdventureViewController" customModule="AdventureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ee5-qW-3XI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gf3-93-g64">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You lie down on the grass.
+
+
+As you begin to relax, the the sky above you seems to be getting further away.   You panic and try to move, but you are sinking into the ground.
+
+
+Then nothing.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gf3-93-g64" firstAttribute="leading" secondItem="z4U-N3-zas" secondAttribute="leading" constant="68" id="2aL-dB-XUK"/>
+                            <constraint firstItem="Gf3-93-g64" firstAttribute="top" secondItem="z4U-N3-zas" secondAttribute="top" constant="95" id="EbQ-5t-Iff"/>
+                            <constraint firstItem="z4U-N3-zas" firstAttribute="centerY" secondItem="Gf3-93-g64" secondAttribute="bottom" constant="-83.5" id="RP5-9k-Ick"/>
+                            <constraint firstItem="z4U-N3-zas" firstAttribute="trailing" secondItem="Gf3-93-g64" secondAttribute="trailing" constant="68" id="ln4-FW-1rV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="z4U-N3-zas"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jDb-bV-MA4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0q-xZ-hOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="166"/>
+        </scene>
+        <!--Adventure View Controller-->
+        <scene sceneID="mkd-kJ-Wra">
+            <objects>
+                <viewController id="0dH-dY-V7X" customClass="AdventureViewController" customModule="AdventureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ArL-oa-muC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jv5-ig-0oQ">
+                                <rect key="frame" x="68" y="159" width="239" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">You open the door, expecting nothing to happen.
+
+
+Once open, you notice that in between the frame, you do not see the other side, but instead a water like portal.
+
+
+You step through the portal.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jv5-ig-0oQ" firstAttribute="leading" secondItem="7uA-3t-Q6c" secondAttribute="leading" constant="68" id="Rxa-cl-evK"/>
+                            <constraint firstItem="Jv5-ig-0oQ" firstAttribute="top" secondItem="7uA-3t-Q6c" secondAttribute="top" constant="95" id="YXq-PS-nB3"/>
+                            <constraint firstItem="7uA-3t-Q6c" firstAttribute="trailing" secondItem="Jv5-ig-0oQ" secondAttribute="trailing" constant="68" id="gph-l3-NAt"/>
+                            <constraint firstItem="7uA-3t-Q6c" firstAttribute="centerY" secondItem="Jv5-ig-0oQ" secondAttribute="bottom" constant="-83.5" id="ryN-y6-cwS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7uA-3t-Q6c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HHA-6G-NTm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRv-IY-fWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3222" y="-586"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M15-ve-tTE"/>
+    </inferredMetricsTieBreakers>
+</document>
